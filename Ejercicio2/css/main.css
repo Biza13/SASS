@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedora .caja1, .contenedora .caja2, .contenedora .caja3, .contenedora .caja4, .contenedora .caja5 {
+  width: 100px;
+  height: 100px;
+  margin: 10px 50px;
+  transition: transform 0.5s linear;
+}
+.contenedora .caja1 {
+  margin-top: 50px;
+  background-color: rgb(25.5, 25.5, 255);
+  border: 1px solid rgb(0, 0, 234.6);
+}
+.contenedora .caja2 {
+  background-color: rgb(76.5, 76.5, 255);
+  border: 1px solid rgb(0, 0, 239.7);
+}
+.contenedora .caja3 {
+  background-color: rgb(127.5, 127.5, 255);
+  border: 1px solid rgb(0, 0, 244.8);
+}
+.contenedora .caja4 {
+  background-color: rgb(178.5, 178.5, 255);
+  border: 1px solid rgb(0, 0, 249.9);
+}
+.contenedora .caja5 {
+  background-color: rgb(229.5, 229.5, 255);
+  border: 1px solid blue;
+}
+.contenedora .caja1:hover, .contenedora .caja2:hover, .contenedora .caja3:hover, .contenedora .caja4:hover, .contenedora .caja5:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=main.css.map */

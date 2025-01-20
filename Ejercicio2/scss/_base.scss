@@ -1,0 +1,12 @@
+$color-blue: blue;
+
+@mixin coloresCajas ($color, $porcentajeLighten, $porcentajeDarken){
+    background-color: lighten($color, $porcentajeLighten);
+    border: 1px solid darken($color, $porcentajeDarken);
+}
+
+@mixin dimensionesCaja {
+    width: 100px;
+    height: 100px;
+    margin: 10px 50px;
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedora{
+
+    //propiedades comunes para todas las cajas
+    .caja1, .caja2, .caja3, .caja4, .caja5{
+        @include dimensionesCaja;
+        transition: transform 0.5s linear;
+    }
+    
+    //propiedades individuales de cada caja
+    .caja1{
+        margin-top: 50px; 
+        @include coloresCajas($color-blue, 5%, 4%);
+    }
+
+    .caja2{
+        @include coloresCajas($color-blue, 15%, 3%);
+    }
+
+    .caja3{
+        @include coloresCajas($color-blue, 25%, 2%);
+    }
+
+    .caja4{
+        @include coloresCajas($color-blue, 35%, 1%);
+    }
+
+    .caja5{
+        @include coloresCajas($color-blue, 45%, 0%);
+    }
+
+    //propiedades comunes del hover de las cajas
+    .caja1:hover, .caja2:hover, .caja3:hover, .caja4:hover, .caja5:hover{
+        transform: scale(1.1);
+    } 
+}
