@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+
+    nav{
+        background-color: $color-granate;
+        margin-top: 30px;
+
+        ul{
+            @include flex ("flex-start");
+            height: 50px;
+
+            li{
+                margin: 0 20px;
+                list-style: none;
+                color: $color-white;
+
+                a:active{
+                    color: $color-rosa;
+                    font-weight: bold;
+                }
+            }
+
+            li:hover{
+                transform: scale(1.3);
+            }
+        }
+    }
+
+    .cards{
+        width: 95%;
+        margin: 30px auto;        
+        @include grid (2, 2);
+        text-align: center;
+
+        figure{
+            background-color: $color-crema;
+            border-radius: 25px;
+            box-shadow: 2px 2px 5px $color-rosa;
+
+            img{
+                display: block;
+                width: 90%;
+                margin: 20px auto;
+                border-radius: 25px;
+            }
+
+            figcaption{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

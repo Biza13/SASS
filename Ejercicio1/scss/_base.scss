@@ -1,0 +1,21 @@
+$color-granate: #670D0f;
+$color-rosa: #f01945;
+$color-naranja: #f36444;
+$color-amarillo: #ffce6f;
+$color-crema: #ffe3c9;
+$color-pulsarElemNav: #f01945;
+$color-hoverElemNav: #f36444;
+$color-white: white;
+
+@mixin grid ($columns, $rows) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+    gap: 20px;
+}
+
+@mixin flex ($justifyCont) {
+    display: flex;
+    justify-content: $justifyCont;
+    align-items: center;
+}
